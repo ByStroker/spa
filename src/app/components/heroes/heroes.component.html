@@ -1,0 +1,6 @@
+<h1 class="animated fadeIn fast">Productos</h1>
+<hr>
+<div class="row row-cols-1 row row-cols-sm-2 row row-cols-md-3 row row-cols-lg-4 g-4">
+    <!---->
+    <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes; let i = index"></app-heroe-tarjeta>
+</div>
